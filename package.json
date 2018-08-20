@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.8.1"
+  }
+}
