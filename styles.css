@@ -10,7 +10,7 @@
 }
 
 .hero-image {
-    background-image: url("https://pixabay.com/get/ea34b20b29f11c22d2524518a33219c8b66ae3d01ab4114496f1c678/background-313415_1280.jpg");
+    /* background-image: url("https://pixabay.com/get/ea34b20b29f11c22d2524518a33219c8b66ae3d01ab4114496f1c678/background-313415_1280.jpg"); */
     background-color: black;
     height: 250px;
     background-position: center;
@@ -70,11 +70,11 @@ h1 {
     padding: 15px 10px;
 }
 
-.example {
+.songDiv {
     width: 22%;
     min-width: 200px;
     display: inline-block;
-    height: 200px;
+    /* height: 200px; */
     text-align: center;
     border-radius: 10px;
     border: 1px solid black;
