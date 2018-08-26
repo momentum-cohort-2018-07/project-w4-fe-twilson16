@@ -7,35 +7,19 @@ document.getElementById('search-button').addEventListener('click', event => {
 
   let searchTerm = document.getElementById('search').value.replace(' ', '+').trim()
   let audioForm = document.getElementById('audio-search')
-  request.get(`https://itunes-api-proxy.glitch.me/search?term=${searchTerm}&media=music`)
+  request.get(`https://itunes.apple.com/search?term=${searchTerm}&media=music`)
     .then(response => JSON.parse(response.text))
     .then(body => {
       let results = body.results
       addSongToPage(results)
-    //   console.log('success!')
+      console.log('success!')
     })
   audioForm.reset()
 })
 
-// document.getElementById('search-button').addEventListener('click', event => {
-//   event.preventDefault()
-
-//   let songSearch = document.getElementById('song-search').value.replace(' ', '+').trim()
-//   let audioForm = document.getElementById('audio-search')
-//   request.get(`https://itunes-api-proxy.glitch.me/search?term=${songSearch}`)
-//     .then(response => JSON.parse(response.text))
-//     .then(body => {
-//       let results = body.results
-//       addSongToPage(results)
-//       console.log('success!')
-//     })
-//   audioForm.reset()
-// })
-
 function addSongToPage (results) {
   let resultsDiv = document.getElementById('results-div')
   resultsDiv.innerHTML = ''
-  //   console.log(resultsDiv)
   for (let result of results) {
     makeSongDiv(result)
   }
