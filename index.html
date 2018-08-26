@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Song Search</title>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Kaushan+Script" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>
+                    <strong>Song Search</strong>
+                </h1>
+            </div>
+        </div>
+        <div id="search-container">
+            <div>
+                <h5>A few favorites</h5>
+            </div>
+            <p class="fav">"You're Gonna Go Far, Kid" by The Offspring</p>
+            <audio controls type="audio/mp3" class="favs-player">
+                <source src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/9f/3b/28/9f3b28da-6f4d-eb5d-d438-b40b0ee72ef3/mzaf_3475765670709609961.plus.aac.p.m4a">
+            </audio>
+            <p class="fav">"Brave as a Noun" by Andrew Jackson Jihad</p>
+            <audio controls type="audio/mp3" class="favs-player">
+                <source src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music1/v4/b9/db/cd/b9dbcdc9-5b30-05a5-86b6-d2e172709c99/mzaf_5132235647859173281.plus.aac.p.m4a">
+            </audio>
+            <p class="fav">"Exposure" by Get Him Eat Him</p>
+            <audio controls type="audio/mp3" class="favs-player" >
+                <source src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music1/v4/e8/7d/31/e87d3138-a45e-bd2d-7db5-fcb2fc9a9960/mzaf_1161445409067757282.plus.aac.p.m4a">
+            </audio>
+            <div id="audio-container">
+                <p id="play">Play a song from below!</p>
+                <audio controls type="audio/mp3" id="audio-player">
+                </audio>
+            </div>
+            <form id="audio-search">
+                <div id="search-option">
+                    <label for artist-search>Search by Artist, Song or Album:</label>
+                    <input type="text" id="search">
+                </div>
+                <div id="button-div">
+                    <button type="submit" id="search-button">Search</button>
+                </div>
+                <div id="radio-buttons">
+                <input type="radio" id="artist" name="artist" value="artist" checked>
+                <label for="artist">Artist</label>
+
+                <input type="radio" id="song" name="song" value="song">
+                <label for="song">Song</label>
+
+                <input type="radio" id="album" name="album" value="album">
+                <label for="album">Album</label>
+            </div>
+            </form>
+        </div>
+        <div id="results-container">
+            <div id="results-title">
+                <h3>Results</h3>
+                <p id="direction">Click album cover to preview song!</p>
+            </div>
+            <div id="results-div">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
