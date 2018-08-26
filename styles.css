@@ -10,9 +10,9 @@
 }
 
 .hero-image {
-    /* background-image: url("https://pixabay.com/get/ea34b20b29f11c22d2524518a33219c8b66ae3d01ab4114496f1c678/background-313415_1280.jpg"); */
+    background-image: url("album-black-classic-167092.jpg");
     background-color: black;
-    height: 250px;
+    height: 275px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,50 +21,67 @@
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 16%;
+    top: 11%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-
+    color: #a407af;
 }
 
 h1 {
     font-family: 'Kaushan Script', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 6rem;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px white;
 }
 
-#audio-serach {
+#audio-player {
+    width: 90%;
+    margin: 10px 35px;
+}
+
+.fav{
+    margin: unset;
+    width: 45%;
+    padding: 15px 35px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.favs-player {
+    width: 50%;
+    display: inline-block;
+}
+
+#play {
+    margin: unset;
+}
+#audio-search {
     margin: 0 auto;
     padding: 0px 40px;
 }
 
-/* label#artist-search, #song-search.label {
-    padding: 0px 0px 0px 30px;
-} */
-
-.search-options {
-    width: 47%;
-    display: inline-block;
-    padding: 30px 0px;
+#search-option {
+    width: 75%;
+    padding: 15px 0px;
     margin: 0 auto;
     /* border: black 1px dashed; */
     margin: 0px 0px 0px 20px;
+    display: inline-block
 }
 
 #button-div {
     text-align: right;
     margin: 5px 40px;
-    position: relative;
-    /* right: 20px; */
-    /* border: black 1px dashed; */
+    width: 10%;
+    display: inline-block;
 }
 
-/* #search-button {
-    margin: 5px 30px;
-    position: relative;
-    right: 20px;
-} */
+#radio-buttons {
+    margin: 0px 40px;
+}
+
+label {
+    padding: 0px 40px 0px 5px;
+}
 
 #results-title {
     padding: 15px 10px;
@@ -74,9 +91,23 @@ h1 {
     width: 22%;
     min-width: 200px;
     display: inline-block;
-    /* height: 200px; */
+    height: 250px;
     text-align: center;
     border-radius: 10px;
     border: 1px solid black;
     margin: 8px;
+    padding: 10px;
+    vertical-align: top;
+    overflow: auto;
+}
+
+.trackName, .artistName {
+   margin: 8px 0px;
+   line-height: 1.2rem;
+}
+
+#direction {
+    font-size: 12px;
+    color: gray;
+    margin: unset;
 }
